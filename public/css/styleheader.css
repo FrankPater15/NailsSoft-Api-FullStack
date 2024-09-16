@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu);
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+   font-size: 9rem;
+   color:#222831;
+   margin-left: 200px;
+   
+}
+
+h2 {
+  
+  color:#000000;
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 140%;
+  line-height: 180%;
+  color: #060606;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.header-right{
+  align-items: flex-end;
+  cursor: pointer;
+  margin-top: -125px;
+  margin-left: 38rem;
+}
+
+.header-right span{
+  padding-left: 25px;
+}
+
+span{
+  font-size: 20px;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+h3{
+  color: white;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  z-index: -1;
+}
+
+.title {
+  margin-left: 30%;
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .9);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title0 {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title0 {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url(/images/ImgFdo13.jpeg);
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background-image: url(/images/ImgFdo1.jpg);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url(/images/ImgFdo11.jpeg);
+  z-index:2;
+}
+
+#slide3:before {
+  background-image: url(/images/ImgFdo9.jpeg);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #000000;
+  
+}
+
+.transformed-video {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-150%) rotate(-5deg);
+  width: 250px; /* o cualquier tamaño adecuado */
+  height: auto; /* mantener la relación de aspecto */
+  /* display: block; */
+  margin-left: 30%;
+  
+}
+
+
+.btn {
+  background-color: #4CAF50; /* Color del fondo */
+  color: white;              /* Color del texto */
+  padding: 10px 20px;        /* Relleno alrededor del texto */
+  text-align: center;        /* Centrar el texto */
+  text-decoration: none;     /* Quitar el subrayado */
+  display: inline-block;     /* Comportamiento como un botón */
+  border-radius: 5px;        /* Bordes redondeados */
+}
+
+.btn:hover {
+  background-color: #45a049; /* Color al pasar el mouse */
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+body {
+  background: rgb(37, 41, 41);
+}
+.container {
+  max-width: 768px;
+  margin: auto;
+}
+.landing-page {
+  background: linear-gradient(rgba(38, 38, 43, 0.85), rgba(38, 38, 43, 0.95)),
+  url(/images/fondobkg.jpg);
+  background-size: cover;
+  padding: 40px 80px;
+  height: 400px;
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.lading-page__symbol {
+  height: 40px;
+  width: 40px;
+  background: rgb(249, 248, 249);
+  position: relative;
+}
+.lading-page__symbol:after {
+  content: "";
+  top: 10px;
+  left: 10px;
+  height: calc( 100% - 10px );
+  width: calc( 100% - 10px );
+  position: absolute;
+  border: 5px solid rgb(157, 6, 142);
+}
+.lading-page__info {
+  
+}
+.lading-page__sub-title {
+  margin: 0;
+  margin-top: 35px;
+}
+.lading-page__title {
+  margin: 0;
+  margin-bottom: 35px;
+  color: white;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.lading-page__register-btn {
+  background: rgb(157, 6, 142);
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 100px
+  
+}
+.lading-page__triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(rgba(238, 11, 223, 0.7), rgba(255, 255, 255, 0.8)), url("http://www.ecouterre.com/wp-content/uploads/2013/08/water-bottle-537x402.jpg");
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-size: cover;
+  background-position-y: 40px; 
+}
+.ripple {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  
+}
+.ripple--active .ripple__circle{
+  animation: a-ripple .5s ease-in;
+}
+
+.ripple__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.25);
+  
+}
+@keyframes a-ripple {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
